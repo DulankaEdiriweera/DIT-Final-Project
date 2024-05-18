@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<style>
+.container {
+    background-image: url('Images/homebg.png'); /* Replace 'your-downloaded-image.jpg' with your image filename */
+    background-size: cover;
+    background-position: center;
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: top-center;
+}
+.content {
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+.buttons {
+    margin-top: 20px;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    transition: background-color 0.3s;
+}
+
+.btn1:hover {
+    background-color: #2D324C;
+}
+.btn2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+    font-weight: bold;
+     font-size: 22px;
+    transition: background-color 0.3s;
+}
+
+.btn2:hover {
+    background-color: #2D324C;
+</style>
+</head>
+<body>
+
+	<?php include 'HomeHeader.php' ?>
+	
+	<div class="container" >
+		<div class="content">
+			<h1>Welcome!!!</h1>
+			<h3>Are your Business keeps you Busy???</h3>
+			<h3>Don't worry. Our Online Dog Boarding is Always there for You.</h3>
+			<h3>Make a Reseravtion.</h3> 
+			<h3>For busy owners, a trusted hand, Your Dog is safe with us.</h3>
+			
+			<div class="buttons">
+				<a href="Register.php" class="btn1">Register now</a>
+				<a href="Login.php" class="btn2">Login</a>
+			</div>
+		</div>
+	</div>
+	
+	<?php include 'Footer.php' ?>
+	
+</body>
+</html>

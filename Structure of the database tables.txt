@@ -1,0 +1,38 @@
+//dogboardingdb - Database name
+
+//user Table
+CREATE TABLE `user` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `FirstName` varchar(45) DEFAULT NULL,
+  `LastName` varchar(45) DEFAULT NULL,
+  `Address` varchar(45) DEFAULT NULL,
+  `DateOfBirth` date DEFAULT NULL,
+  `MobileNo` char(10) DEFAULT NULL,
+  `Email` varchar(45) DEFAULT NULL,
+  `Password` varchar(45) DEFAULT NULL,
+  `UserType` varchar(45) DEFAULT 'User',
+  PRIMARY KEY (`ID`)
+) 
+
+//reservation Table
+CREATE TABLE `reservationtable` (
+  `ReservationID` int NOT NULL AUTO_INCREMENT,
+  `OwnerName` varchar(45) DEFAULT NULL,
+  `UserName` varchar(45) DEFAULT NULL,
+  `PetName` varchar(45) DEFAULT NULL,
+  `Breed` varchar(45) DEFAULT NULL,
+  `Colour` varchar(45) DEFAULT NULL,
+  `StartDate` varchar(45) DEFAULT NULL,
+  `EndDate` varchar(45) DEFAULT NULL,
+  `Days` varchar(45) DEFAULT NULL,
+  `FoodPrice` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`ReservationID`)
+) 
+
+//tablecheckdate Table
+CREATE TABLE `tablecheckdate` (
+  `DateID` int NOT NULL AUTO_INCREMENT,
+  `Date` date DEFAULT NULL,
+  `Status` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`DateID`)
+) 
